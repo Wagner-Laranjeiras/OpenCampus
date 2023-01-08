@@ -11,41 +11,53 @@
 <body>
     <div class="container">
         <header class="title">
-            <h1>Brasilianisches Lieder</h1>
+            <h1>Brasilianisches Lieder</h1> <!--It would be a best practice to include a link for "top of the page" here, even in such a small page?-->
         </header>
         <main class="main-content">
             <section class="intro">                                                          
                 <h2>Brasilien ist Kontinental</h2>
                 <p>Brasilien ist ein Land mit kontinentalen Ausmaßen. Unterteilt in 5 große Regionen weist es eine enorme kulturelle Vielfalt auf. Hier bringe ich einige geografische Kuriositäten und musikalische Empfehlungen, damit Sie ein wenig von unseren Wurzeln schmecken können. </p>
-                <blockquote>"O samba é o pai do prazer, o samba é o filho da dor, o grande poder transformador"<figcaption>—Caetano Veloso, <cite>Desde Que o Samba É Samba</cite></figcaption></blockquote>
+                <blockquote lang="pt-br">"O samba é o pai do prazer, o samba é o filho da dor, o grande poder transformador"
+                    <figcaption>—Caetano Veloso, <cite>Desde Que o Samba É Samba</cite></figcaption>
+                </blockquote>
                 <div class="table">
-                        <table>
-                        <tr>
-                            <th>Population</th>
-                            <th>Bundesländer</th>
-                            <th>Größe</th>
-                            <th>Wie viele Deutschländer passen in Brasilien?</th>
-                        </tr>
-                        <tr>
-                            <td>214 milionen</td>
-                            <td>26 + Distrito Federal</td>
-                            <td>8.516.000 km²</td>
-                            <td>Fast 24 Deutschländer</td>
-                        </tr>
+                    <!--Opted for using aria-label instead of caption, for styling purposes. is there a better aproach? I'm having trouble styling the caption tag.-->
+                    <table aria-label="Geografische Fakten über Brasilien">
+                        <thead>
+                            <tr>
+                                <th scope="col">Population</th>
+                                <th scope="col">Bundesländer</th>
+                                <th scope="col">Größe</th>
+                                <th scope="col">Wie viele Deutschländer passen in Brasilien?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>214 milionen</td>
+                                <td>26 + Distrito Federal</td>
+                                <td>8.516.000 km²</td>
+                                <td>Fast 24 Deutschländer</td>
+                            </tr>
+                        </tbody> 
                     </table>
                 </div>
             </section> 
             <section class="cards-area">      
-                <p class="cards-tipp">
-                    <strong>Tipp: Fahren Sie mit der Maus über die Karten unten.</strong>
-                </p>                                                             
+                <div>
+                    <p class="cards-tipp">Hier empfehle ich brasilianische Musik, geordnet nach Musikrichtungen. Links werden in neuen Tabs geöffnet.</p>
+                    <p class="cards-tipp">
+                        <strong>Tipp: </strong>Bewegen Sie den Mauszeiger über die Karte. 
+                        <span class="sr-only">Oder verwenden Sie TAB zum Navigieren</span>
+                    </p>
+                </div>                                                             
                 <div class="card-container">
                     <div class="the-card">
+                        <p class="sr-only">Hier empfehle ich drei Samba Musik</p>
                         <div class="the-front">
-                            <img src="images/cartola.jpg" alt="Cartola">
+                            <img src="images/cartola.jpg" alt="Samba Komponist Cartola">
                         </div>
                         <div class="the-back">
-                            <h3>Samba</h3>
+                            <h3 class="sr-only">Samba</h3>
                             <ul>
                                 <li>
                                     <a href="https://open.spotify.com/track/5AKrqJ7RiOCfCaaCuxxGk0?si=3cfd30fa98094a15" target="_blank">Preciso me Encontrar</a>
@@ -62,11 +74,12 @@
                 </div>
                 <div class="card-container">                                                                                                                
                     <div class="the-card">
+                        <p class="sr-only">Hier empfehle ich drei Bossa-Nova Musik</p>
                         <div class="the-front">
-                            <img src="images/elis.jpg" alt="Elis Regina">
+                            <img src="images/elis.jpg" alt="Elis Regina singt Bossa Nova">
                         </div>
                         <div class="the-back">
-                            <h3>Bossa Nova</h3>
+                            <h3 class="sr-only">Bossa Nova</h3>
                         <ul class="music-list">
                             <li>
                                 <a href="https://open.spotify.com/track/7mCs2Eai4oIX9q4SNJirjo?si=d02afe40db754e49" target="_blank">Chega de Saudade</a>
@@ -83,11 +96,12 @@
                 </div>
                 <div class="card-container">
                     <div class="the-card">
+                        <p class="sr-only">Hier empfehle ich drei Forró Musik</p>
                         <div class="the-front">
-                            <img src="images/dominguinhos.jpg" alt="Dominguinhos">
+                            <img src="images/dominguinhos.jpg" alt="Dominguinhos spielt Forró">
                         </div>
                         <div class="the-back">
-                            <h3>Forró</h3>
+                            <h3 class="sr-only">Forró</h3>
                             <ul>
                                 <li>
                                     <a href="https://open.spotify.com/track/3zcBNmJH6ToRCI0WNEIuES?si=6477bd7f11c8432a" target="_blank">Esperando na Janela</a>
@@ -104,11 +118,12 @@
                 </div>
                 <div class="card-container">
                     <div class="the-card">
+                        <p class="sr-only">Hier empfehle ich drei Frevo Musik</p>
                         <div class="the-front">
-                            <img src="images/elba.jpg" alt="Elba Ramalho">
+                            <img src="images/elba.jpg" alt="Elba Ramalho singt Frevo">
                         </div>
                         <div class="the-back">
-                            <h3>Frevo</h3>
+                            <h3 class="sr-only">Frevo</h3>
                             <ul>
                                 <li>
                                     <a href="https://open.spotify.com/track/6lQkIgAuduoiYuWTpfmL5l?si=b4dea0f3203f4643" target="_blank">Voltei Recife</a>
@@ -125,11 +140,12 @@
                 </div>
                 <div class="card-container">
                     <div class="the-card">
+                        <p class="sr-only">Hier empfehle ich drei Choro Musik</p>
                         <div class="the-front">
-                            <img src="images/hermeto.jpg" alt="Hermeto Pascoal">
+                            <img src="images/hermeto.jpg" alt="Hermeto Pascoal spielt Choro">
                         </div>
                         <div class="the-back">
-                            <h3>Choro</h3>
+                            <h3 class="sr-only">Choro</h3>
                             <ul>
                                 <li>
                                     <a href="https://open.spotify.com/track/3oxnUSkfOo3ansYHNGCbzP?si=62999c4f81ce4cd5" target="_blank">Chorinho pra Ele</a>
@@ -144,34 +160,70 @@
                         </div>
                     </div>
                 </div>
-            </section>                                                                                                    
+            </section>     
+            
+            
+
+
+
+
             <section class="form-area">
-                <form action="">
-                    <div class="form-questions">
-                        <label class="form-label" for="">Wie heißen Sie?</label>
-                        <input class="form-input" type="text">
-                    </div>
-                    <div class="form-questions">
-                        <label class="form-label" for="">Ihre E-Mail?</label>
-                        <input class="form-input" type="text">
-                    </div>
-                    <div class="form-questions">
-                        <label class="form-label" for="">Was war Ihr liebster Musikrhythmus?</label>
-                        <input class="form-input" type="text">
-                    </div>
-                    <div class="form-questions">
-                        <label class="form-label" for="">Möchten Sie Musik aus Ihrer Region empfehlen? Teilen Sie hier gern ein Playlist!</label>
-                        <input class="form-input" type="text">
-                    </div>
-                    <div>
-                        <button class="form-submit">Submit</button>
-                    </div>
+                <form class="form-questions" aria-label="" action="">
+                    <label class="form-label">
+                        Wie heißen Sie? 
+                        <input placeholder="Geben sie hier ihren Namen ein" class="form-input" type="text">
+                    </label>
+                    <label class="form-label">
+                        Ihre E-Mail? 
+                        <input placeholder="Geben sie hier ihre E-mail ein" class="form-input" type="text">
+                    </label>
+                    <label class="form-label">
+                        Was war Ihr liebster Musikrhythmus? 
+                        <input placeholder="Geben Sie hier einen Favoriten" class="form-input" type="text">
+                    </label>
+                    <label class="form-label">
+                        Möchten Sie Musik aus Ihrer Region empfehlen? 
+                        <input placeholder="Teilen Sie hier gern ein Playlist" class="form-input" type="text">
+                    </label>
+                    <button type="submit" class="form-submit">Submit</button>
                 </form>
             </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <footer class="footer">
-                <p>Hallo! Ich heiße <a href="about.html" target="_blank">Wagner Laranjeiras</a> und diese Site ist mein Projekt für <em>OpenCampus Webentwiclker</em> Kurs. Die ganze Playlist finden Sie hier: </p>
-                <span><a href="https://open.spotify.com/playlist/63EWczKOD8mqEND4gCayGD?si=709da629aeeb4934" target="_blank">Brasilianisches Lieder</a></span>
+                <p>Hallo! Ich heiße Wagner Laranjeiras und diese Site ist mein Projekt für <em>OpenCampus Webentwiclker</em> Kurs. Die ganze Playlist finden Sie hier: 
+                <span><a href="https://open.spotify.com/playlist/63EWczKOD8mqEND4gCayGD?si=709da629aeeb4934" target="_blank">Brasilianisches Lieder.</a></span> Und
+                <a href="about.html" target="_blank"> Klicken Sie hier um mir mehr kennenlernen</a>  (Alle Links werden in neuen Tabs geöffnet)</p>
             </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </main>
     </div>
 </body>
