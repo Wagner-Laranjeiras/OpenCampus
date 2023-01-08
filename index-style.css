@@ -1,0 +1,244 @@
+/* GENERAL RULES*/
+:root {
+    --ff-title: 'LaBelleAurore', serif;
+    --ff-text: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --text-clr-dark: #0071B9;
+    --text-clr-light: #FAF8FF;
+    --bg-clr-dark: #0071B9;
+    --bg-clr-light: #FAF8FF;
+    --bg-clr-light-accent: #e6e3ec;
+    --bg-clr-dark-accent: #5db1e6;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER AND TITLE */
+.container {
+    border: 1px solid var(--bg-clr-dark);
+    background-color: var(--bg-clr-dark);
+    background-image: url(images/background-img.png);
+    background-repeat: repeat;
+    background-size: 4rem;
+}
+
+h1 {
+    color: var(--text-clr-light);
+    font-family: var(--ff-title);
+    font-size: 6rem;
+    margin: 2rem;
+    padding: 2rem;
+    text-align: left;  
+}
+
+/* MAIN CONTENT */
+.main-content {
+    margin: 0 16.6%;
+    font-family: var(--ff-text);
+}
+
+/* INTRO BEGINNING */
+.intro {
+    background-color: var(--bg-clr-light);
+    border-radius: 1rem;
+    color: var(--text-clr-dark); 
+    margin: 2rem auto;  
+    padding: 1rem;
+    width: 100%;
+}
+
+.intro h2 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.6rem;
+    margin:  0.8rem 0.8rem 0.8rem 0.4rem;
+}
+
+blockquote {
+    text-align: right;
+    font-size: 1.2rem;
+    margin: 1.8rem;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+    height: 1rem;
+    width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bg-clr-light-accent);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--bg-clr-dark-accent);   
+    border-radius: 0.2rem;
+}
+
+th {
+    padding: 0 3.2rem;
+    font-size: 2rem;
+}
+
+td {
+    padding: 0.8rem 1.8rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* CARDS RELATED CONTENT */
+.cards-tipp {
+    text-align: center;
+    padding: 0.8rem;
+}
+
+.cards-tipp strong {
+    font-size: 1.4rem;
+    color: var(--text-clr-dark);
+}
+
+img {
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+ul li a {
+    color: var(--bg-clr-light);
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 1rem;
+    line-height: 4rem;
+}
+
+ul li a span {
+    font-size: 1.34rem;
+}
+
+.cards-area {
+    background-color: var(--bg-clr-light);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    width: fit-content;
+}
+
+.card-container {
+    display: inline-block;
+    height: 26rem;
+    margin: 1rem;
+    position: relative;
+    width: 18rem;
+}
+
+.card-container h3 {
+    visibility: hidden;
+}
+
+.the-card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    width: 100%;
+}
+
+.the-card:hover {
+    transform: rotateY(180deg);
+}
+
+.the-front {
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.the-back {
+    backface-visibility: hidden;
+    background-color: var(--bg-clr-dark);
+    border-radius: 1rem;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg);
+    width: 100%; 
+}
+
+/* FORM RELATED CONTENT */
+.form-area {
+    background-color: var(--bg-clr-light);
+    border-radius: 1rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+.form-label {
+    color: var(--text-clr-dark);
+    font-size: 1.6rem;
+}
+
+.form-questions {
+    display: inline-block;
+    padding: 0.2rem;
+    font-weight: 600;
+    margin: 0.6rem;
+}
+.form-submit {
+    margin: 0.2rem 0.2rem 0.2rem 46%;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    border: 0.1rem solid #0071B9;
+    padding: 0.4rem;
+    color: var(--text-clr-dark);
+}
+.form-input {
+    width: 100%;
+}
+
+/* FOOTER RELATED CONTENT */
+.footer {
+    background-color: var(--bg-clr-light);
+    border-radius: 1rem;
+    color: var(--text-clr-dark);
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.footer a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* LINK HOVER GENERAL BEHAVIOR */
+a:hover {
+    font-size: 1.6rem;
+}
+
+/* FONT-FACE */
+@font-face {
+    font-family: 'LaBelleAurore';
+    src: url('fonts/LaBelleAurore-Regular.ttf') format('truetype');
+  }
